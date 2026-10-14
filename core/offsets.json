@@ -1,0 +1,12 @@
+{
+  "_comment": "Override manuel des offsets. Rempli par tools/dump_offsets. Toute cle absente est scannee.",
+  "_roblox_version": "a remplir",
+  "Luau::luau_load": "0x0",
+  "Luau::luaD_throw": "0x0",
+  "Lua::lua_pcall": "0x0",
+  "Lua::lua_getglobal": "0x0",
+  "Lua::lua_setglobal": "0x0",
+  "Lua::lua_pushcclosurek": "0x0",
+  "Lua::lua_createtable": "0x0",
+  "ScriptContext::GetGlobalState": "0x0"
+}

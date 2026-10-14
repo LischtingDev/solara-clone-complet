@@ -1,0 +1,1 @@
+-- Globals additionnels (getgenv, getrenv, getreg). TODO(J4)

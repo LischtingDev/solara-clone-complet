@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SyntaxDefinition name="Luau" extensions=".luau;.lua"
+                  xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+  <Color name="Comment"    foreground="#5F6A7A" />
+  <Color name="String"     foreground="#9ECE6A" />
+  <Color name="Number"     foreground="#FF9E64" />
+  <Color name="Keyword"    foreground="#BB9AF7" fontWeight="bold" />
+  <Color name="Builtin"    foreground="#7AA2F7" />
+  <Color name="Global"     foreground="#2AC3DE" />
+
+  <RuleSet>
+    <Span color="Comment" begin="--\[\[" end="\]\]" />
+    <Span color="Comment" begin="--" end="\n" />
+    <Span color="String"  begin="&quot;" end="&quot;" />
+    <Span color="String"  begin="'" end="'" />
+
+    <Rule color="Number">\b\d+(\.\d+)?\b</Rule>
+
+    <Keywords color="Keyword">
+      <Word>and</Word><Word>break</Word><Word>do</Word><Word>else</Word>
+      <Word>elseif</Word><Word>end</Word><Word>false</Word><Word>for</Word>
+      <Word>function</Word><Word>if</Word><Word>in</Word><Word>local</Word>
+      <Word>nil</Word><Word>not</Word><Word>or</Word><Word>repeat</Word>
+      <Word>return</Word><Word>then</Word><Word>true</Word><Word>until</Word>
+      <Word>while</Word><Word>continue</Word><Word>type</Word><Word>export</Word>
+    </Keywords>
+
+    <Keywords color="Builtin">
+      <Word>print</Word><Word>warn</Word><Word>error</Word><Word>pcall</Word>
+      <Word>assert</Word><Word>require</Word><Word>typeof</Word><Word>tostring</Word>
+      <Word>tonumber</Word><Word>pairs</Word><Word>ipairs</Word><Word>table</Word>
+      <Word>string</Word><Word>math</Word><Word>task</Word><Word>select</Word>
+      <Word>setmetatable</Word><Word>getmetatable</Word><Word>rawget</Word>
+      <Word>rawset</Word><Word>os</Word>
+    </Keywords>
+
+    <Keywords color="Global">
+      <Word>game</Word><Word>workspace</Word><Word>script</Word><Word>Instance</Word>
+      <Word>Enum</Word><Word>Vector3</Word><Word>CFrame</Word><Word>Color3</Word>
+      <Word>UDim2</Word><Word>Ray</Word><Word>getgenv</Word><Word>getrenv</Word>
+      <Word>hookfunction</Word><Word>getrawmetatable</Word><Word>firesignal</Word>
+      <Word>getconnections</Word><Word>setthreadidentity</Word>
+    </Keywords>
+  </RuleSet>
+</SyntaxDefinition>

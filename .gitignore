@@ -1,0 +1,15 @@
+build/
+out/
+.vs/
+.vscode/
+*.user
+*.suo
+bin/
+obj/
+*.pdb
+*.ilk
+logs/
+core/offsets.local.json
+*.dll
+*.exe
+!third_party/**/*.dll

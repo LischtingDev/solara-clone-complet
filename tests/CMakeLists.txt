@@ -1,0 +1,10 @@
+add_executable(test_signature_matcher test_signature_matcher.cpp)
+target_include_directories(test_signature_matcher PRIVATE ../core/include)
+target_sources(test_signature_matcher PRIVATE ../core/src/scanner.cpp)
+sc_set_warnings(test_signature_matcher)
+add_test(NAME signature_matcher COMMAND test_signature_matcher)
+
+add_executable(test_ipc_framing test_ipc_framing.cpp)
+target_link_libraries(test_ipc_framing PRIVATE sc_ipc)
+sc_set_warnings(test_ipc_framing)
+add_test(NAME ipc_framing COMMAND test_ipc_framing)
